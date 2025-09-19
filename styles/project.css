@@ -1,0 +1,238 @@
+/* 
+   Base Styles
+ */
+* {
+margin: 0;
+padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+ line-height: 1.6;
+ background-color: #f0f3f8; /* Color de fondo suave */
+ color: #333;
+ 
+ padding: 0 1rem;
+}
+
+h1, h2, h3, .logo span {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 700;
+}
+
+/* Header & Navigation */
+header {
+ background: #222;
+color: #fff;
+ padding: 1rem;
+display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+header .logo {
+ display: flex;
+ align-items: center;
+gap: 10px;
+}
+
+header .logo span {
+ font-size: 1.4rem;
+}
+
+nav ul {
+ list-style: none;
+ display: flex;
+ gap: 1rem;
+}
+
+nav ul li a {
+ color: #fff;
+ text-decoration: none;
+ padding: 0.5rem 0.8rem;
+
+}
+
+
+#menuButton {
+ display: none; /* Oculto en vista de escritorio */
+ background: none;
+ border: none;
+ color: #fff;
+ font-size: 2rem;
+ cursor: pointer;
+}
+
+
+/* Main Content */
+main {
+ max-width: 1200px;
+ margin: 1.5rem auto;
+ display: flex;
+ flex-direction: column;
+ gap: 1.5rem;
+}
+
+h1 {
+ font-size: 2rem;
+ text-align: center;
+ color: #444;
+ margin-bottom: 1rem;
+}
+
+.about-container {
+ display: grid;
+ grid-template-columns: 2fr 1fr; /* 2/3 para el texto, 1/3 para la foto */
+ gap: 1.5rem;
+}
+
+section {
+ background: #fff;
+ padding: 1rem;
+ border-radius: 6px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+ background: #333;
+ color: #fff;
+ padding: 0.5rem;
+ border-radius: 4px 4px 0 0;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* Courses Section */
+.certificates {
+ text-align: center;
+}
+
+.certificates h2 {
+text-align: left;
+}
+
+.course-filters {
+ display: flex;
+ justify-content: center;
+ gap: 1rem;
+ margin: 1rem 0;
+}
+
+.filter-btn {
+ padding: 0.5rem 1rem;
+border: 1px solid #ccc;
+background: #eee;
+ cursor: pointer;
+ border-radius: 6px;
+
+ font-family: 'Montserrat', sans-serif;
+}
+
+.filter-btn:hover {
+ background: #ccc;
+}
+
+.filter-btn.active {
+ background: white;
+ border-color: gray;
+}
+
+.filter-btn .subject-title {
+ font-size: 1.1rem;
+ font-weight: bold;
+ display: block;
+}
+
+.filter-btn .subject-credits {
+ font-size: 0.8rem;
+ color: gray;
+}
+
+#courses-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+}
+
+.course-card {
+ background: #f9f9f9;
+border: 1px solid #ddd;
+ padding: 1rem;
+border-radius: 8px;
+ max-width: 350px;
+ text-align: left;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.course-card.completed {
+ border: 2px solid #5cb85c;
+}
+
+
+/* Footer */
+footer {
+ background: #222;
+ color: #fff;
+ padding: 1.2rem;
+text-align: center;
+ margin-top: 2rem;
+}
+
+footer .socialmedia {
+ margin: 1rem 0;
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+}
+
+footer .socialmedia a img {
+ width: 30px;
+ height: 30px;
+ transition: transform 0.3s;
+}
+
+footer .socialmedia a img:hover {
+ transform: scale(1.1);
+}
+
+#lastModified {
+ font-size: 0.8rem;
+ color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ nav {
+display: none;
+ }
+
+ nav.show {
+ display: block;
+position: absolute;
+ top: 70px; /* Ajusta para que aparezca debajo del header */
+ right: 1rem;
+ background: #222;
+ padding: 1rem;
+ border-radius: 6px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+ z-index: 10;
+ }
+
+ nav ul {
+ flex-direction: column;
+ gap: 0.5rem;
+ }
+
+ #menuButton {
+ display: block;
+ }
+
+ .about-container {
+ grid-template-columns: 1fr; /* Columna única en móviles */
+ }
+
+ .course-filters {
+ flex-wrap: wrap;
+ }
+}
