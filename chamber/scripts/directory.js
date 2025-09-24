@@ -1,4 +1,4 @@
-// === FOOTER YEAR & LAST MODIFIED ===
+
 const currentYearSpan = document.querySelector("#currentyear");
 const lastModifiedParagraph = document.querySelector("#lastModified");
 
@@ -17,7 +17,7 @@ if (lastModifiedParagraph) {
     lastModifiedParagraph.innerHTML = `Last Modified: <span class="highlight">${formatted}</span>`;
 }
 
-// === MOBILE MENU ===
+
 const menuButton = document.getElementById("menuButton");
 const nav = document.querySelector("header nav");
 
@@ -26,7 +26,7 @@ menuButton.addEventListener("click", () => {
     menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
 });
 
-// === LOAD MEMBERS FROM JSON ===
+
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.querySelector(".business-cards");
 

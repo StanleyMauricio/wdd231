@@ -1,4 +1,4 @@
-/* ========== RESET & BASE STYLES ========== */
+/*  RESET & BASE STYLES  */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
 }
 
-/* ========== HEADER ========== */
+/*  HEADER  */
 header {
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ nav a {
   color: #000;
 }
 
-/* ========== HERO IMAGE ========== */
+/*  HERO IMAGE  */
 .hero {
   background: #d9d9d9;
   height: 300px;
@@ -64,7 +64,7 @@ nav a {
   font-weight: bold;
 }
 
-/* ========== INFO GRID ========== */
+/*  INFO GRID  */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,7 +86,7 @@ nav a {
   font-size: 1rem;
 }
 
-/* ========== BUSINESS CARDS ========== */
+/*  BUSINESS CARDS  */
 .business-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -109,7 +109,7 @@ nav a {
   object-fit: cover;
 }
 
-/* ========== FOOTER ========== */
+/*  FOOTER  */
 footer {
   background: #e0e0e0;
   padding: 2rem 1rem;
@@ -135,7 +135,7 @@ footer {
   border-radius: 50%;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+/*  RESPONSIVE DESIGN  */
 @media (max-width: 768px) {
   .info-grid {
     grid-template-columns: 1fr;
