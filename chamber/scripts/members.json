@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Huancayo Restaurant",
+      "address": "Av. Giráldez 456, Huancayo, Peru",
+      "phone": "(064) 555-101",
+      "website": "http://huancayorestaurant.com",
+      "image": "images/business1.png",
+      "membership": 2,
+      "info": "Traditional Junín food with local ingredients."
+    },
+    {
+      "name": "Andean Tourism",
+      "address": "Jr. Puno 120, Huancayo, Peru",
+      "phone": "(064) 555-202",
+      "website": "http://andeantourism.com",
+      "image": "images/business2.png",
+      "membership": 3,
+      "info": "Travel agency offering Huaytapallana glacier tours."
+    },
+    {
+      "name": "Mantaro Handicrafts",
+      "address": "Calle Real 350, Huancayo, Peru",
+      "phone": "(064) 555-303",
+      "website": "http://mantaroart.com",
+      "image": "images/business3.png",
+      "membership": 1,
+      "info": "Artisan crafts and souvenirs from Mantaro Valley."
+    },
+    {
+      "name": "Huancayo Tech Solutions",
+      "address": "Av. Ferrocarril 700, Huancayo, Peru",
+      "phone": "(064) 555-404",
+      "website": "http://huancayotech.com",
+      "image": "images/business4.png",
+      "membership": 3,
+      "info": "IT services and software development for local businesses."
+    },
+    {
+      "name": "Junín Coffee Roasters",
+      "address": "Plaza Constitución 89, Huancayo, Peru",
+      "phone": "(064) 555-505",
+      "website": "http://junincoffee.com",
+      "image": "images/business5.png",
+      "membership": 2,
+      "info": "Specialty coffee roasted in the Mantaro Valley."
+    },
+    {
+      "name": "Peru Eco Lodge",
+      "address": "Carretera Central Km 18, Huancayo, Peru",
+      "phone": "(064) 555-606",
+      "website": "http://peruecolodge.com",
+      "image": "images/business6.png",
+      "membership": 1,
+      "info": "Eco-friendly lodge offering sustainable tourism experiences."
+    },
+    {
+      "name": "Huancayo Fitness Center",
+      "address": "Av. Mariscal Castilla 999, Huancayo, Peru",
+      "phone": "(064) 555-707",
+      "website": "http://huancayofitness.com",
+      "image": "images/business7.png",
+      "membership": 2,
+      "info": "Modern gym and wellness center in Huancayo."
+    }
+  ]
+}

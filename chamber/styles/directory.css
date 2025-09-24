@@ -1,0 +1,147 @@
+/* ========== RESET & BASE STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5em;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 1rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+/* ========== HERO IMAGE ========== */
+.hero {
+  background: #d9d9d9;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.hero button {
+  background: #c0c0c0;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ========== INFO GRID ========== */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.info-grid > div {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.info-grid h2 {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  font-size: 1rem;
+}
+
+/* ========== BUSINESS CARDS ========== */
+.business-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.business {
+  background: #f2f2f2;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  text-align: center;
+}
+
+.business img {
+  background: #d9d9d9;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #e0e0e0;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  background: #bbb;
+  border-radius: 50%;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-cards {
+    grid-template-columns: 1fr;
+  }
+}
