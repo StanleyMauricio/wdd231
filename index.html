@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huancayo Chamber of Commerce</title>
+    <meta property="cs:title" content="Huancayo Chamber of Commerce">
+    <meta name="cs:description" content="A brief description of the document">
+    <meta name="cs:author" content="Stanley Mauricio Carbajal">
+
+    <link rel="stylesheet" href="styles/project.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/favicon.ico" alt="Website Logo" width="50" height="50">
+            <span>Comercial Stanley</span>
+        </div>
+        <button id="menuButton" aria-label="Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="about-container">
+            <section class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! My name is Stanley Mauricio and I'm from Huancayo, Peru. I enjoy swimming and playing soccer. 
+                I was born and raised in this beautiful city nestled in the Andes. Swimming relaxes me and keeps me fit,
+                while soccer excites me with its energy and camaraderie.
+                I also love exploring the city, its markets, and spending time with family and friends.</p>            
+            </section>
+
+            <section class="about-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Student Photo" width="200" loading="lazy">
+            </section>
+        </div>
+
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button class="filter-btn" data-filter="all">
+                    All
+                </button>
+                <button class="filter-btn" data-filter="WDD">
+                    WDD
+                </button>
+                <button class="filter-btn" data-filter="CSE">
+                    CSE
+                </button>
+            </div>
+            <div id="courses-container"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>    
+
+    <footer>
+        <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>        
+        <p id="lastModified"></p>
+        <nav class="socialmedia">
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="Linkedin">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/github.svg" alt="Instagram">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.jpeg" alt="X (formerly Twitter)">
+            </a>
+        </nav>
+    </footer>
+
+    <script src="scripts/project.js" defer></script>
+</body>
+</html>

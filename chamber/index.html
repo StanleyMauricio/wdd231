@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huancayo Chamber of Commerce</title>
-    <meta property="cs:title" content="Huancayo Chamber of Commerce">
-    <meta name="cs:description" content="A brief description of the document">
-    <meta name="cs:author" content="Stanley Mauricio Carbajal">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Huancayo Chamber of Commerce</title>
+   <meta name="description" content="Official site of the Huancayo Chamber of Commerce supporting businesses and community.">
+   <meta name="author" content="Stanley Mauricio Carbajal">
 
-    <link rel="stylesheet" href="styles/project.css">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
+   <link rel="stylesheet" href="styles/directory.css">    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/favicon.ico" alt="Website Logo" width="50" height="50">
-            <span>Comercial Stanley</span>
-        </div>
-        <button id="menuButton" aria-label="Menu">☰</button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chamber.html">Chamber Project</a></li>
-                <li><a href="final.html">Final Project</a></li>
+   <header>
+      <div class="logo">
+         <img src="images/favicon.ico" alt="Website Logo" width="50" height="50">
+         <span>Huancayo Chamber of Commerce</span>
+      </div>
+      <button id="menuButton" aria-label="Menu">☰</button>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+      <!-- Hero Section -->
+      <section class="hero">
+         <img src="images/Huancayo.jpg" alt="Huancayo city landscape" class="hero-image">
+         <div class="hero-text">
+            <h1>Welcome to the Huancayo Chamber of Commerce</h1>
+            <p>Supporting local businesses and community growth</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+         </div>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events">
+         <h2>Upcoming Events</h2>
+         <ul>
+            <li>Business Networking Night - Sept 28</li>
+            <li>Entrepreneurship Workshop - Oct 5</li>
+            <li>Annual Chamber Gala - Nov 12</li>
+         </ul>
+      </section>
+
+      <!-- Weather Section (dinámico con JS) -->
+      <section class="weather">
+         <div class="current-weather">
+            <h2>Current Weather</h2>
+            <p id="weather-description">Loading...</p>
+            <p id="weather-temp"></p>
+            <p id="weather-extra"></p>
+         </div>
+         <div class="forecast">
+            <h2>3-Day Forecast</h2>
+            <ul id="forecast-list">
+               <li>Loading forecast...</li>
             </ul>
-        </nav>
-    </header>
+         </div>
+      </section>
 
-    <main>
-        <h1>Home</h1>
+      <!-- Business Highlights Section (dinámico con JSON + JS) -->
+      <section class="business-highlights">
+         <h2>Featured Businesses</h2>
+         <div class="business-cards">
+            <!-- Aquí se insertan las tarjetas desde JS -->
+         </div>
+      </section>
+   </main>
 
-        <div class="about-container">
-            <section class="about-text">
-                <h2>About Me</h2>
-                <p>Hello! My name is Stanley Mauricio and I'm from Huancayo, Peru. I enjoy swimming and playing soccer. 
-                I was born and raised in this beautiful city nestled in the Andes. Swimming relaxes me and keeps me fit,
-                while soccer excites me with its energy and camaraderie.
-                I also love exploring the city, its markets, and spending time with family and friends.</p>            
-            </section>
+   <footer>
+      <div class="footer-info">
+         <p><strong>Huancayo Chamber of Commerce</strong></p>
+         <p>Av. Giráldez 123<br>Huancayo, Junín, Perú</p>
+         <p>Email: comerce@gmail.com<br>Phone: (064) 555-2300</p>
+      </div>
+      <nav class="socialmedia">
+         <a href="https://linkedin.com">
+            <img src="images/linkedin.png" alt="Linkedin">
+         </a>
+         <a href="https://instagram.com">
+            <img src="images/github.svg" alt="Instagram">
+         </a>
+         <a href="https://x.com">
+            <img src="images/x.jpeg" alt="X (formerly Twitter)">
+         </a>
+      </nav>
+      <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>        
+      <p id="lastModified"></p>
+   </footer>
 
-            <section class="about-photo">
-                <h2>Student Photo</h2>
-                <img src="images/profile.jpg" alt="Student Photo" width="200" loading="lazy">
-            </section>
-        </div>
-
-        <section class="certificates">
-            <h2>Web Certificate Courses</h2>
-            <div class="course-filters">
-                <button class="filter-btn" data-filter="all">
-                    All
-                </button>
-                <button class="filter-btn" data-filter="WDD">
-                    WDD
-                </button>
-                <button class="filter-btn" data-filter="CSE">
-                    CSE
-                </button>
-            </div>
-            <div id="courses-container"></div>
-            <p id="total-credits"></p>
-        </section>
-    </main>    
-
-    <footer>
-        <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>        
-        <p id="lastModified"></p>
-        <nav class="socialmedia">
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="Linkedin">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/github.svg" alt="Instagram">
-            </a>
-            <a href="https://x.com">
-                <img src="images/x.jpeg" alt="X (formerly Twitter)">
-            </a>
-        </nav>
-    </footer>
-
-    <script src="scripts/project.js" defer></script>
+   <!-- Script principal (unificado) -->
+   <script src="scripts/home.js" defer></script>
 </body>
 </html>

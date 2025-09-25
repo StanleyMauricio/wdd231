@@ -89,5 +89,5 @@ filterButtons.forEach(btn => {
     });
 });
 
-// Llama a la función al cargar la página para mostrar todos los cursos inicialmente
+
 renderCourses(courses);

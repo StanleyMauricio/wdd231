@@ -6,14 +6,15 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fff;
-  color: #000;
-  line-height: 1.4;
+  color: #333;
+  line-height: 1.5;
 }
 
 h1, h2, h3 {
   margin-bottom: 0.5em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*  HEADER  */
@@ -21,100 +22,176 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e0e0e0;
-  padding: 1rem;
+  background: #003366;
+  color: #fff;
+  padding: 1rem 2rem;
 }
 
 header .logo {
   display: flex;
   align-items: center;
   font-weight: bold;
+  gap: 0.5rem;
+}
+
+header .logo img {
+  border-radius: 50%;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   font-weight: bold;
-  color: #000;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
 }
 
 /*  HERO IMAGE  */
 .hero {
-  background: #d9d9d9;
-  height: 300px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   position: relative;
-  margin: 1rem 0;
+  height: 400px;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
-.hero button {
-  background: #c0c0c0;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ffd700;
+  color: #000;
   font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-/*  INFO GRID  */
+.cta-button:hover {
+  background: #ffbf00;
+}
+
+/*  GRID SECTIONS (Events + Weather)  */
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
 }
 
-.info-grid > div {
-  background: #f0f0f0;
+.info-grid section {
+  background: #f9f9f9;
   border: 1px solid #ccc;
-  padding: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 .info-grid h2 {
-  background: #333;
-  color: #fff;
-  padding: 0.5rem;
-  margin: -1rem -1rem 1rem -1rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.5rem;
 }
 
-/*  BUSINESS CARDS  */
+/*  EVENTS  */
+.events ul {
+  list-style: disc inside;
+  line-height: 1.8;
+}
+
+/*  WEATHER  */
+.weather p {
+  margin: 0.5rem 0;
+}
+
+/*  BUSINESS HIGHLIGHTS  */
+.business-highlights {
+  margin: 2rem;
+}
+
 .business-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.business {
+.business-card {
   background: #f2f2f2;
   border: 1px solid #bbb;
   padding: 1rem;
+  border-radius: 8px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.business img {
-  background: #d9d9d9;
+.business-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.business-card img {
   width: 100%;
-  height: 120px;
-  margin-bottom: 1rem;
+  height: 150px;
   object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.business-card h3 {
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.business-card a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.business-card a:hover {
+  text-decoration: underline;
 }
 
 /*  FOOTER  */
 footer {
-  background: #e0e0e0;
+  background: #003366;
+  color: #fff;
   padding: 2rem 1rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .footer-info {
@@ -131,8 +208,12 @@ footer {
 .socialmedia img {
   width: 30px;
   height: 30px;
-  background: #bbb;
   border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
 }
 
 /*  RESPONSIVE DESIGN  */
@@ -141,7 +222,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .business-cards {
-    grid-template-columns: 1fr;
+  .hero-text {
+    bottom: 10%;
+    left: 5%;
+    font-size: 0.9rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
   }
 }
