@@ -14,7 +14,7 @@ if (currentYearSpan) {
 if (lastModifiedParagraph) {
   const modified = new Date(document.lastModified);
   const formatted = new Intl.DateTimeFormat("en-US", {
-    dateStyle: "full",
+    dateStyle: "full",  
     timeStyle: "medium"
   }).format(modified);
   lastModifiedParagraph.innerHTML = `Last Modified: <span class="highlight">${formatted}</span>`;
