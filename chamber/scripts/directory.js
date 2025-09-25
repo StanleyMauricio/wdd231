@@ -1,4 +1,3 @@
-
 const currentYearSpan = document.querySelector("#currentyear");
 const lastModifiedParagraph = document.querySelector("#lastModified");
 
@@ -17,7 +16,6 @@ if (lastModifiedParagraph) {
     lastModifiedParagraph.innerHTML = `Last Modified: <span class="highlight">${formatted}</span>`;
 }
 
-
 const menuButton = document.getElementById("menuButton");
 const nav = document.querySelector("header nav");
 
@@ -26,27 +24,29 @@ menuButton.addEventListener("click", () => {
     menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
 });
 
-
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.querySelector(".business-cards");
 
-    const response = await fetch("data/members.json");
-    const data = await response.json();
+    try {
+        const response = await fetch("data/members.json");
+        const data = await response.json();
 
-    data.businesses.forEach(biz => {
-        const article = document.createElement("article");
-        article.classList.add("business");
+        data.members.forEach(biz => {
+            const article = document.createElement("article");
+            article.classList.add("business");
 
-        article.innerHTML = `
-            <img src="${biz.image}" alt="${biz.name}">
-            <h3>${biz.name}</h3>
-            <p>${biz.description}</p>
-            <p><strong>Email:</strong> ${biz.email}</p>
-            <p><strong>Phone:</strong> ${biz.phone}</p>
-            <p><strong>Website:</strong> <a href="http://${biz.website}" target="_blank">${biz.website}</a></p>
-        `;
+            article.innerHTML = `
+                <img src="${biz.image}" alt="${biz.name}">
+                <h3>${biz.name}</h3>
+                <p><strong>Address:</strong> ${biz.address}</p>
+                <p><strong>Phone:</strong> ${biz.phone}</p>
+                <p><strong>Website:</strong> <a href="${biz.website}" target="_blank">${biz.website}</a></p>
+                <p>${biz.info}</p>
+            `;
 
-        container.appendChild(article);
-    });
+            container.appendChild(article);
+        });
+    } catch (error) {
+        console.error("Error loading members.json:", error);
+    }
 });
-
