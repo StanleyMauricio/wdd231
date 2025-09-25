@@ -1,6 +1,6 @@
-// =============================
+
 // Footer dinámico
-// =============================
+
 const currentYearSpan = document.querySelector("#currentyear");
 const lastModifiedParagraph = document.querySelector("#lastModified");
 const menuButton = document.getElementById("menuButton");
@@ -20,17 +20,15 @@ if (lastModifiedParagraph) {
   lastModifiedParagraph.innerHTML = `Last Modified: <span class="highlight">${formatted}</span>`;
 }
 
-// =============================
+
 // Menú responsive
-// =============================
+
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("show");
   menuButton.textContent = nav.classList.contains("show") ? "✖" : "☰";
 });
 
-// =============================
 // Miembros destacados
-// =============================
 async function loadMembers() {
   try {
     const response = await fetch("data/members.json");
@@ -73,10 +71,7 @@ async function loadMembers() {
   }
 }
 
-// =============================
-// Clima (OpenWeatherMap)
-// =============================
-// ⚠️ Reemplaza con tu API Key personal
+
 const apiKey = "TU_API_KEY";
 const lat = -12.0651; // Huancayo aprox
 const lon = -75.2049;
@@ -88,7 +83,7 @@ async function loadWeather() {
     const response = await fetch(url);
     const data = await response.json();
 
-    // Datos actuales (primer bloque)
+    // Datos actuales 
     const current = data.list[0];
     const currentContainer = document.querySelector(".current-weather");
     currentContainer.innerHTML = `
@@ -97,7 +92,7 @@ async function loadWeather() {
       <p><strong>Condition:</strong> ${current.weather[0].description}</p>
     `;
 
-    // Pronóstico 3 días → filtro a las 12:00
+    // Pronóstico 3 días 
     const forecastContainer = document.querySelector(".forecast");
     forecastContainer.innerHTML = "<h2>3-Day Forecast</h2>";
     const daily = {};
@@ -126,8 +121,7 @@ async function loadWeather() {
   }
 }
 
-// =============================
 // Inicializar
-// =============================
+
 loadMembers();
 loadWeather();
