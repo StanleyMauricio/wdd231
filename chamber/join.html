@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Huancayo Chamber of Commerce</title>
+   <meta name="description" content="Official site of the Huancayo Chamber of Commerce supporting businesses and community.">
+   <meta name="author" content="Stanley Mauricio Carbajal">
+
+   <link rel="stylesheet" href="styles/directory.css">    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+   <header>
+      <div class="logo">
+         <img src="images/favicon.ico" alt="Website Logo" width="50" height="50">
+         <span>Huancayo Chamber of Commerce</span>
+      </div>
+      <button id="menuButton" aria-label="Menu">☰</button>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+         </ul>
+      </nav>
+   </header>
+
+  <main>
+    <!-- JOIN FORM -->
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstname" title="Applicant's First Name" autocomplete="given-name" required>
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lastname" title="Applicant's Last Name" autocomplete="family-name" required>
+      </label>
+
+      <label>
+        Organizational Title:
+        <input type="text" name="title" title="Organizational Title" autocomplete="organization-title"
+          pattern="[A-Za-z\\s\\-]{7,}" required>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" autocomplete="email"
+          placeholder="example@company.com" required>
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+      </label>
+
+      <label>
+        Company / Organization Name:
+        <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" title="Select a Membership Level" required>
+          <option value="">Select...</option>
+          <option value="NP">NP (Non-profit)</option>
+          <option value="Bronze">Bronze</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+        </select>
+      </label>
+
+      <label>
+        Description:
+        <textarea name="description" title="Company Description"></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <!-- MEMBERSHIP CARDS -->
+    <section class="membership-cards">
+      <div class="card">
+        <h3>NP</h3>
+        <p>No cost for non-profit organizations</p>
+        <a data-modal="modalNP">View Benefits</a>
+      </div>
+      <div class="card">
+        <h3>Bronze</h3>
+        <p>Basic benefits + access to select events</p>
+        <a data-modal="modalBronze">View Benefits</a>
+      </div>
+      <div class="card">
+        <h3>Silver</h3>
+        <p>Includes discounts and featured advertising</p>
+        <a data-modal="modalSilver">View Benefits</a>
+      </div>
+      <div class="card">
+        <h3>Gold</h3>
+        <p>Full access to all premium benefits</p>
+        <a data-modal="modalGold">View Benefits</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALS -->
+  <div id="modalNP" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>NP Benefits</h3>
+      <p>Access to community events, no membership fee.</p>
+    </div>
+  </div>
+
+  <div id="modalBronze" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Bronze Benefits</h3>
+      <ul>
+        <li>Access to basic events</li>
+        <li>Participation in trade fairs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modalSilver" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Silver Benefits</h3>
+      <ul>
+        <li>Featured advertising</li>
+        <li>Event discounts</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modalGold" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Gold Benefits</h3>
+      <ul>
+        <li>Full premium access</li>
+        <li>Exclusive training</li>
+        <li>Top placement in the directory</li>
+      </ul>
+    </div>
+  </div>
+
+   <footer>
+      <div class="footer-info">
+         <p><strong>Huancayo Chamber of Commerce</strong></p>
+         <p>Av. Giráldez 123<br>Huancayo, Junín, Perú</p>
+         <p>Email: comerce@gmail.com<br>Phone: (064) 555-2300</p>
+      </div>
+      <nav class="socialmedia">
+         <a href="https://linkedin.com">
+            <img src="images/linkedin.png" alt="Linkedin">
+         </a>
+         <a href="https://instagram.com">
+            <img src="images/github.svg" alt="Instagram">
+         </a>
+         <a href="https://x.com">
+            <img src="images/x.jpeg" alt="X (formerly Twitter)">
+         </a>
+      </nav>
+      <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>        
+      <p id="lastModified"></p>
+   </footer>
+
+
+   <script src="scripts/join.js" defer></script>
+</body>
+</html>

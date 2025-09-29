@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Huancayo Chamber of Commerce</title>
+   <meta name="description" content="Official site of the Huancayo Chamber of Commerce supporting businesses and community.">
+   <meta name="author" content="Stanley Mauricio Carbajal">
+
+   <link rel="stylesheet" href="styles/directory.css">    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="images/favicon.ico">
+</head>
+    
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/favicon.ico" alt="Website Logo" width="50" height="50">
+      <span>Huancayo Chamber of Commerce</span>
+    </div>
+    <button id="menuButton" aria-label="Menu">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="thankyou-section">
+      <h1>🎉 Thank You for Your Application!</h1>
+      <p>We appreciate your interest in joining the Huancayo Chamber of Commerce.</p>
+      <p>Here is the information you submitted:</p>
+
+      <div id="submitted-info">
+        <!-- User data will be displayed here -->
+      </div>
+
+      <a href="index.html" class="back-home">⬅ Back to Home</a>
+    </section>
+  </main>
+    <footer>
+      <div class="footer-info">
+         <p><strong>Huancayo Chamber of Commerce</strong></p>
+         <p>Av. Giráldez 123<br>Huancayo, Junín, Perú</p>
+         <p>Email: comerce@gmail.com<br>Phone: (064) 555-2300</p>
+      </div>
+      <nav class="socialmedia">
+         <a href="https://linkedin.com">
+            <img src="images/linkedin.png" alt="Linkedin">
+         </a>
+         <a href="https://instagram.com">
+            <img src="images/github.svg" alt="Instagram">
+         </a>
+         <a href="https://x.com">
+            <img src="images/x.jpeg" alt="X (formerly Twitter)">
+         </a>
+      </nav>
+      <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>        
+      <p id="lastModified"></p>
+
+   </footer>
+   
+   <script src="scripts/thanks.js" defer></script>
+</body>
+</html>
