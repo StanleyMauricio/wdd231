@@ -23,9 +23,9 @@ menuButton.addEventListener("click", () => {
     nav.classList.toggle("show");
     menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
 });
-  // ===============================
+ 
   // DISPLAY SUBMITTED DATA
-  // ===============================
+  
   const infoDiv = document.getElementById('submitted-info');
   if (infoDiv) {
     const params = new URLSearchParams(window.location.search);

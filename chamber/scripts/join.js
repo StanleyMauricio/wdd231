@@ -24,17 +24,17 @@ menuButton.addEventListener("click", () => {
     nav.classList.toggle("show");
     menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
 });
-  // ===============================
+
   // TIMESTAMP FOR JOIN FORM
-  // ===============================
+
   const timestampInput = document.getElementById('timestamp');
   if (timestampInput) {
     timestampInput.value = new Date().toLocaleString();
   }
 
-  // ===============================
+
   // MEMBERSHIP MODALS
-  // ===============================
+ 
   const modalLinks = document.querySelectorAll('[data-modal]');
   const modals = document.querySelectorAll('.modal');
   const closeButtons = document.querySelectorAll('.modal .close');
