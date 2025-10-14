@@ -1,4 +1,4 @@
-// scripts/discover.js  (version corregida)
+// scripts/discover.js  
 const currentYearSpan = document.querySelector("#currentyear");
 const lastModifiedParagraph = document.querySelector("#lastModified");
 const menuButton = document.getElementById("menuButton");
@@ -16,14 +16,14 @@ if (lastModifiedParagraph) {
   lastModifiedParagraph.innerHTML = `Last Modified: <span class="highlight">${formatted}</span>`;
 }
 
-/* ===== menu responsive (seguro) ===== */
+/* ===== menu responsive  ===== */
 if (menuButton && nav) {
   menuButton.addEventListener("click", () => {
     nav.classList.toggle("show");
     menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
   });
 
-  // cerrar menu al hacer click en un link (mejora accesible)
+  // close menu
   nav.querySelectorAll("a").forEach((a) =>
     a.addEventListener("click", () => {
       nav.classList.remove("show");
@@ -32,9 +32,7 @@ if (menuButton && nav) {
   );
 }
 
-/* ===== load attractions from JSON and render cards =====
-   expects file: data/huancayo.json (structure uses huancayo_attractions array)
-*/
+/* load attractions */
 async function loadAttractions() {
   const container = document.querySelector(".cards-container");
   if (!container) return;
@@ -49,7 +47,7 @@ async function loadAttractions() {
       // create card
       const article = document.createElement("article");
       article.className = "place-card";
-      // set named grid area for responsiveness
+      // set named 
       article.style.gridArea = `card${index + 1}`;
 
       // build inner markup: h2, figure, address, p, button
@@ -92,11 +90,7 @@ async function loadAttractions() {
   }
 }
 
-/* ===== localStorage: last visit message (requirements exactos) =====
-   - first visit: "Welcome! Let us know if you have any questions."
-   - less than a day: "Back so soon! Awesome!"
-   - otherwise: "You last visited n days ago." (use 'day' singular when n===1)
-*/
+/* localStorage   */
 function handleVisitMessage() {
   const visitMessageEl = document.getElementById("visitMessage");
   if (!visitMessageEl) return;
