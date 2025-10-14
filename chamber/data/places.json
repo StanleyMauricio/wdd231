@@ -12,7 +12,7 @@
       "address": "Around Calle Real and Plaza Constitución (Downtown Huancayo).",
       "cost": "Free (access to the squares and the Cathedral exterior).",
       "description": "The heart of the city, including the Plaza Constitución with the Cathedral of the Holy Trinity, and the nearby Plaza Huamanmarca. Ideal for appreciating neoclassical and historical architecture.",
-      "photo_url": "images/plaza Constitucion.webp"
+      "photo_url": "images/plazaConstitucion.webp"
     },
     {
       "name": "Catalina Huanca Archaeology Museum",
@@ -26,7 +26,7 @@
       "address": "Jr. Santa Rosa 299, El Tambo, Huancayo (inside the Colegio Salesiano Santa Rosa).",
       "cost": "Adults: S/ 5.00 soles.",
       "description": "A comprehensive museum with four main areas: Archaeology, Natural History (local and foreign fauna and flora), Entomology, and Numismatics (coins).",
-      "photo_url": "images/Salesian Museum.webp"
+      "photo_url": "images/salesianoMuseum.webp"
     },
     {
       "name": "Torre-Torre (Stone Forest)",
@@ -54,7 +54,7 @@
       "address": "Ingenio District, about 28 km northeast of Huancayo.",
       "cost": "Free or symbolic fee. (Main expense is food and transportation).",
       "description": "A fish farming center dedicated to trout breeding. A scenic and relaxed spot in the Mantaro Valley where visitors can see the process and enjoy fresh trout at surrounding countryside restaurants.",
-      "photo_url": "images/ingenio.webp"
+      "photo_url": "images/Ingenio.webp"
     }
   ]
 }
