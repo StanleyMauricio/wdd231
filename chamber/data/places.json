@@ -1,0 +1,60 @@
+{
+  "huancayo_attractions": [
+    {
+      "name": "Cerrito de la Libertad (Liberty Hill)",  
+      "address": "Located east of Huancayo city. About 5-10 minutes by car from the Plaza de Armas.",
+      "cost": "S/ 1.00 - S/ 2.00 soles (Entrance fee to the complex).",
+      "description": "A hill that serves as a natural viewpoint with panoramic views of Huancayo and the Mantaro Valley. It features a recreational complex, a chapel, a small zoo, games, and craft stalls.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Cerrito+de+la+Libertad+Huancayo+panoramic+view"
+    },
+    {
+      "name": "Monumental Zone / Historic Center",
+      "address": "Around Calle Real and Plaza Constitución (Downtown Huancayo).",
+      "cost": "Free (access to the squares and the Cathedral exterior).",
+      "description": "The heart of the city, including the Plaza Constitución with the Cathedral of the Holy Trinity, and the nearby Plaza Huamanmarca. Ideal for appreciating neoclassical and historical architecture.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Plaza+Constitución+and+Huancayo+Cathedral"
+    },
+    {
+      "name": "Catalina Huanca Archaeology Museum",
+      "address": "Av. Circunvalación 220, Pilcomayo, Huancayo.",
+      "cost": "Variable cost (inquire on site).",
+      "description": "Exhibits an important collection of cultural assets and instruments from the Wanka and Wari cultures, including lithic, organic, and ceramic pieces, offering insight into local pre-Hispanic history.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Museo+de+Arqueología+Catalina+Huanca+Huancayo"
+    },
+    {
+      "name": "Vicente Rasetto Salesian Museum",
+      "address": "Jr. Santa Rosa 299, El Tambo, Huancayo (inside the Colegio Salesiano Santa Rosa).",
+      "cost": "Adults: S/ 5.00 soles.",
+      "description": "A comprehensive museum with four main areas: Archaeology, Natural History (local and foreign fauna and flora), Entomology, and Numismatics (coins).",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Museo+Salesiano+Vicente+Rasetto+Huancayo"
+    },
+    {
+      "name": "Torre-Torre (Stone Forest)",
+      "address": "Located about 2.3 km east of Plaza Constitución.",
+      "cost": "Free (only transportation costs apply).",
+      "description": "Natural geological formations of clay and stone, eroded over time, resembling tall 'towers' or 'hoodoos' up to 30 meters high. Great for short hikes, photography, and unique landscapes.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Torre+Torre+Huancayo"
+    },
+    {
+      "name": "Huaytapallana Snow-capped Mountain",
+      "address": "Huaytapallana Regional Conservation Area (northeast of Huancayo).",
+      "cost": "ACR Entrance: S/ 5.00 soles. Full Day Tour: From S/ 60.00 to S/ 150.00.",
+      "description": "A majestic snow peak in the Central Andes. A high-altitude destination (over 5,500 m.a.s.l.) offering stunning landscapes, lagoons, and trekking opportunities. Requires acclimatization.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Nevado+Huaytapallana+Huancayo"
+    },
+    {
+      "name": "Parque de la Identidad Huanca (Huanca Identity Park)",
+      "address": "Av. Daniel Alcides Carrión, El Tambo, Huancayo (Northern area of the city).",
+      "cost": "S/ 1.00 - S/ 2.00 soles (Symbolic entrance fee).",
+      "description": "A cultural theme park honoring the Huanca ethnic group with sculptures, murals, and landscape elements constructed with rustic Andean materials. Perfect for a relaxing afternoon.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Parque+de+la+Identidad+Wanka+Huancayo"
+    },
+    {
+      "name": "Ingenio Trout Farm (Criadero de Truchas)",
+      "address": "Ingenio District, about 28 km northeast of Huancayo.",
+      "cost": "Free or symbolic fee. (Main expense is food and transportation).",
+      "description": "A fish farming center dedicated to trout breeding. A scenic and relaxed spot in the Mantaro Valley where visitors can see the process and enjoy fresh trout at surrounding countryside restaurants.",
+      "photo_url": "https://www.google.com/search?tbm=isch&q=Criadero+de+Truchas+de+Ingenio+Huancayo"
+    }
+  ]
+}

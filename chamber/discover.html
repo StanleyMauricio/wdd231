@@ -3,12 +3,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Huancayo Chamber of Commerce</title>
-   <meta property="cs:title" content="Huancayo Chamber of Commerce">
-   <meta name="cs:description" content="A brief description of the document">
-   <meta name="cs:author" content="Stanley Mauricio Carbajal">
+   <title>Discover| Huancayo Chamber of Commerce</title>
+   <meta name="description" content="Official site of the Huancayo Chamber of Commerce supporting businesses and community.">
+   <meta name="author" content="Stanley Mauricio Carbajal">
 
-   <link rel="stylesheet" href="styles/directory.css">    
+   <link rel="stylesheet" href="styles/directory.css">   
+   <link rel="stylesheet" href="styles/medium.css"> 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
       <nav>
          <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="discover.html" class = "active">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
          </ul>
@@ -32,47 +32,27 @@
    </header>
 
    <main>
-    
+      <!-- Hero Section -->
       <section class="hero">
-         <img src="images/Huancayo.jpg" alt="Scalable responsive hero image of Huancayo">
+         <img src="images/Huancayo.jpg" alt="Huancayo city landscape" class="hero-image">
          <div class="hero-text">
-            <a href="tickets.html" class="cta-button">Keynote Tickets</a>
+            <h1>Discover Huancayo</h1>
+            <p>Explore culture, nature, and history in the heart of the Andes.</p>
          </div>
+      </section>
+      <!-- last viewed -->
+      <section id="visitMessage" class="visit-message"></section>
+
+      <!-- contador de visitas -->
+      <section id="visitInfo" class="visit-info">
+         <p id="visitCount"></p>
+         <p id="lastVisit"></p>
       </section>
 
-    
-      <section class="info-grid">
-         <div class="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-               <li>📅 Agro-Industrial Fair - October 15</li>
-               <li>🎶 Huaylarsh Festival - October 25</li>
-               <li>🏞️ Hike to Huaytapallana Glacier - November 5</li>
-            </ul>
-         </div>
-         <div class="weather">
-            <h2>Current Weather</h2>
-            <p>16°C - Partly Cloudy</p>
-            <ul>
-               <li>High: 20°C</li>
-               <li>Low: 7°C</li>
-               <li>Humidity: 62%</li>
-               <li>Sunrise: 6:00am</li>
-               <li>Sunset: 6:15pm</li>
-            </ul>
-         </div>
-         <div class="forecast">
-            <h2>Weather Forecast</h2>
-            <p>Today: <strong>20°C</strong></p>
-            <p>Tomorrow: <strong>18°C</strong></p>
-            <p>Thursday: <strong>19°C</strong></p>
-         </div>
-      </section>
+      <!-- card container -->
+     <section class="cards-container" id="discoverContainer"></section>
 
-    
-      <section class="business-cards" id="membersContainer">
-         <!-- Business cards will be loaded  from members.json -->
-      </section>
+     
    </main>
 
    <footer>
@@ -96,7 +76,7 @@
       <p id="lastModified"></p>
    </footer>
 
-   <!-- Load dynamic business directory -->
-   <script src="scripts/home.js" defer></script>
+   <!-- Script principal (unificado) -->
+   <script src="scripts/discover.js" type="module"></script>
 </body>
 </html>
