@@ -1,4 +1,4 @@
-/* Container & grid areas for the cards (rename from discover-grid) */
+/* Container cards  */
 .cards-container {
   display: grid;
   gap: 1rem;
