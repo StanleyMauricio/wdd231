@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peruvian Treasures</title>
+  <meta name="description" content="Showcasing the rich cultural heritage of Peru">
+  <meta name="author" content="Stanley Mauricio">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Peruvian Traditions">
+  <meta property="og:description" content="Showing the rich cultural heritage of Peru.">
+  <meta property="og:image" content="images/textileriawood.webp">
+  <meta property="og:url" content="index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1>Peruvian Traditions</h1>
+    <button id="menuButton" aria-label="Menu">☰</button>
+    <nav id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="regions.html">Regions</a>
+      <a href="artisans.html">Artisans</a>
+      <a href="siteplan.html">Site Plan</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/textileriawood.webp" alt="Peruvian textiles">
+      <h2>Discover the Soul of Peruvian Crafts</h2>
+      <p>Explore the beauty and tradition of Peru through its most iconic handmade creations.</p>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section>
+      <h3>Highlights</h3>
+      <div class="card-grid" id="dynamicGrid">
+        <!-- El contenido dinámico se genera desde main.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="thanks.html" method="get">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>
+    <p id="lastModified"></p>
+
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.webp" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.webp" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.webp" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
+
+  <!-- JS principal (con imports de módulo) -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

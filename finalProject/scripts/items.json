@@ -1,0 +1,17 @@
+[
+  {"id":1,"name":"Cusco Textiles","region":"Andes","type":"Textiles","material":"Alpaca","yearEstablished":1978,"description":"Woven works using Incan weaving techniques."},
+  {"id":2,"name":"Moche Ceramics","region":"Coast","type":"Ceramics","material":"Clay","yearEstablished":1985,"description":"Ceramics inspired by the Moche culture."},
+  {"id":3,"name":"Wood Carving","region":"Highlands","type":"Carving","material":"Wood","yearEstablished":1990,"description":"Hand-carved traditional figures."},
+  {"id":4,"name":"Amazon Jewelry","region":"Amazon","type":"Jewelry","material":"Seeds","yearEstablished":2005,"description":"Necklaces and bracelets made from natural materials."},
+  {"id":5,"name":"Andean Ponchos","region":"Andes","type":"Textiles","material":"Sheep wool","yearEstablished":1965,"description":"Traditional ponchos with local patterns."},
+  {"id":6,"name":"Nazca Ceramics","region":"Coast","type":"Ceramics","material":"Red clay","yearEstablished":1970,"description":"Geometric motifs inspired by Nazca culture."},
+  {"id":7,"name":"Basketry","region":"Jungle","type":"Basketry","material":"Plant fiber","yearEstablished":1998,"description":"Handwoven baskets and bags."},
+  {"id":8,"name":"Stone Carving","region":"Highlands","type":"Sculpture","material":"Stone","yearEstablished":1980,"description":"Small traditional stone sculptures."},
+  {"id":9,"name":"Traditional Aguayos","region":"Andes","type":"Textiles","material":"Alpaca","yearEstablished":2000,"description":"Colorful woven fabrics with traditional Andean patterns."},
+  {"id":10,"name":"Contemporary Ceramics","region":"Coast","type":"Ceramics","material":"Glazed clay","yearEstablished":2010,"description":"A fusion of ancient and modern ceramic techniques."},
+  {"id":11,"name":"Ayacucho Embroidery","region":"Andes","type":"Embroidery","material":"Cotton thread","yearEstablished":1955,"description":"Fine embroidery with great attention to detail."},
+  {"id":12,"name":"Traditional Masks","region":"Highlands","type":"Masks","material":"Wood","yearEstablished":1960,"description":"Handcrafted masks used in local festivals."},
+  {"id":13,"name":"Contemporary Weaving","region":"Andes","type":"Textiles","material":"Synthetic blend","yearEstablished":2018,"description":"Modern designs using traditional weaving techniques."},
+  {"id":14,"name":"Metal Handicrafts","region":"Coast","type":"Metalwork","material":"Brass","yearEstablished":1995,"description":"Decorative handcrafted metal objects."},
+  {"id":15,"name":"Traditional Instruments","region":"Andes","type":"Instruments","material":"Wood and cane","yearEstablished":1972,"description":"Handmade flutes, panpipes, and sikus."}
+]

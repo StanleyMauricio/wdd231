@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craft Regions</title>
+  <meta name="description" content="Explore the diverse craft regions of Peru">
+  <meta name="author" content="Stanley Mauricio">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Peruvian Regions">
+  <meta property="og:description" content="Showing the diverse craft regions of Peru.">
+  <meta property="og:image" content="images/region-highlands.webp">
+  <meta property="og:url" content="regions.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1>Peruvian Traditions</h1>
+    <button id="menuButton" aria-label="Menu">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="regions.html" class="active">Regions</a>
+      <a href="artisans.html">Artisans</a>
+      <a href="siteplan.html">Site Plan</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Craft Styles by Region</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/region-highlands.webp" alt="Highlands" width="300">
+        <h4>Andean Highlands</h4>
+        <p>Renowned for colorful woven textiles, alpaca wool, and intricate embroidery.</p>
+      </div>
+      <div class="card">
+        <img src="images/region-coast.webp" alt="Coastal ceramics">
+        <h4>Coastal Region</h4>
+        <p>Famous for pottery, fine ceramics, and ancient Moche-inspired designs.</p>
+      </div>
+      <div class="card">
+        <img src="images/region-amazon.webp" alt="Amazon crafts">
+        <h4>Amazon Jungle</h4>
+        <p>Art from natural fibers, seeds, and traditional dyes from the rainforest.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> | 🏍️ Stanley Mauricio 🎮 Huancayo, Peru</p>
+    <p id="lastModified"></p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+      <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+    </nav>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
