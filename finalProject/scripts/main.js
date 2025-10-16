@@ -1,4 +1,3 @@
-// scripts/main.js
 import { createModal } from './modal.js';
 import { saveFavorite, getFavorites } from './local.js';
 
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   init();
 });
 
-// 🟢 Initialize the app
+//  Initialize
 async function init() {
   try {
     const items = await fetchItems();
@@ -23,7 +22,7 @@ async function init() {
   }
 }
 
-// 🟢 Load local JSON
+//  Load local JSON
 async function fetchItems() {
   try {
     const res = await fetch('data/items.json', { cache: 'no-store' });
@@ -38,7 +37,7 @@ async function fetchItems() {
   }
 }
 
-// 🟢 Render dynamic cards
+//  Render dynamic cards
 function renderItems(items) {
   const grid = document.querySelector('#dynamicGrid');
   if (!grid) {
@@ -85,12 +84,12 @@ function renderItems(items) {
       const newState = !pressed;
       e.currentTarget.setAttribute('aria-pressed', String(newState));
       saveFavorite(id, newState);
-      e.currentTarget.textContent = newState ? '💖 Favorite' : '🤍 Favorite';
+      e.currentTarget.textContent = newState ? ' Favorite' : ' Favorite';
     });
   });
 }
 
-// 🟢 Show details in modal
+//  Show details in modal
 async function openDetailsModal(id) {
   try {
     const items = await fetchItems();
@@ -117,7 +116,7 @@ async function openDetailsModal(id) {
   }
 }
 
-// 🟢 Restore favorites from localStorage
+//  Restore favorites from localStorage
 function restoreFavoritesUI() {
   const favs = getFavorites();
   if (!favs || !favs.length) return;
@@ -126,12 +125,12 @@ function restoreFavoritesUI() {
     const id = Number(btn.dataset.id);
     if (favs.includes(id)) {
       btn.setAttribute('aria-pressed', 'true');
-      btn.textContent = '💖 Favorite';
+      btn.textContent = ' Favorite';
     }
   });
 }
 
-/* 🟡 NEW BLOCK — Year, last modified date, and hamburger menu */
+/* Year, last modified date, and hamburger menu */
 function updateFooterInfo() {
   const currentYearSpan = document.querySelector("#currentyear");
   const lastModifiedParagraph = document.querySelector("#lastModified");
